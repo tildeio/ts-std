@@ -1,4 +1,4 @@
-import { opaque } from './core';
+import { unknown } from './core';
 
 export function keys<T extends object>(obj: T): Array<keyof T> {
   return Object.keys(obj) as any;
@@ -18,6 +18,6 @@ export function* entries<T extends object>(obj: T): Iterable<[keyof T, T[keyof T
   }
 }
 
-export function hasProperty<K extends string>(obj: opaque, key: K): obj is { [P in K]: opaque } {
+export function hasProperty<K extends string>(obj: unknown, key: K): obj is { [P in K]: unknown } {
   return key in (obj as any);
 }

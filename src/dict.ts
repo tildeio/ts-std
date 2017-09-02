@@ -1,6 +1,6 @@
-import { Dict, opaque } from './core';
+import { Dict, unknown } from './core';
 
-export function dict<T = opaque>(): Dict<T> {
+export function dict<T = unknown>(): Dict<T> {
   return Object.create(null);
 }
 
