@@ -1,3 +1,5 @@
+import { Dict, opaque } from './core';
+
 export function dict<T = opaque>(): Dict<T> {
   return Object.create(null);
 }

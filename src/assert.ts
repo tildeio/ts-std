@@ -1,3 +1,5 @@
+import { Option } from './core';
+
 export class AssertionFailed extends Error {
   constructor(message?: string) {
     super(message ? `Assertion failed: ${message}` : 'Assertion failed.');

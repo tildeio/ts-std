@@ -1,3 +1,5 @@
+import { Dict } from './core';
+
 export type JSON =
     string
   | number
