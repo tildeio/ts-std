@@ -1,3 +1,4 @@
-export default function hello() {
-  return 'Hello from ts-std';
-}
+export * from './assert';
+export * from './dict';
+export * from './json';
+export * from './object';
