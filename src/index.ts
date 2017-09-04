@@ -1,3 +1,4 @@
+export * from './array';
 export * from './assert';
 export * from './core';
 export * from './dict';
