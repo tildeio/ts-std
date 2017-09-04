@@ -1,6 +1,6 @@
 {
   "name": "ts-std",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "A standard library for TypeScript, extracted from Glimmer and other Tilde projects",
   "main": "dist/commonjs/src/index.js",
   "module": "dist/modules/src/index.js",
