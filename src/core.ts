@@ -1,4 +1,4 @@
-export type unknown = {} | void | undefined | null | 0 | '';
+export type unknown = void | undefined | null | number | string | boolean | symbol | object;
 export type Option<T> = T | null;
 export type Maybe<T> = T | void | undefined | null;
 
