@@ -6,6 +6,8 @@ export interface Dict<T = unknown> {
   [key: string]: T | undefined;
 }
 
+export type Indexable<T = unknown> = Readonly<Dict<T>>;
+
 export interface Constructor<T = unknown> {
   new(...args: any[]): T;
 }
