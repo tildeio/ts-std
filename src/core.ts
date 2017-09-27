@@ -1,4 +1,8 @@
-export type unknown = void | undefined | null | number | string | boolean | symbol | object;
+export type unknown = Absent | Present;
+
+export type Absent = null | undefined | void;
+export type Present = number | string | boolean | symbol | object;
+
 export type Option<T> = T | null;
 export type Maybe<T> = T | void | undefined | null;
 
