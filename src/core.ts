@@ -1,5 +1,3 @@
-export type unknown = Absent | Present;
-
 export type Absent = null | undefined | void;
 export type Present = number | string | boolean | symbol | object;
 

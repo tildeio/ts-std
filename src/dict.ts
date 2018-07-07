@@ -1,4 +1,4 @@
-import { Dict, Indexable, unknown } from './core';
+import { Dict, Indexable } from './core';
 
 export function dict<T = unknown>(): Dict<T> {
   return Object.create(null);
