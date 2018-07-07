@@ -18,18 +18,19 @@
   "scripts": {
     "problems": "node ./scripts/problems.js",
     "preversion": "npm run test",
-    "prepack": "ember build -prod",
+    "prepare": "ember build -prod",
     "build": "ember build -prod",
     "build-tests": "ember build",
+    "pretest": "npm run problems",
     "test": "ember test",
     "tdd": "ember test --server"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/qunit": "^2.0.31",
-    "ember-cli": "^2.14.2",
-    "libkit": "^0.5.17",
-    "qunitjs": "^2.4.0",
+    "ember-cli": "^3.1.4",
+    "libkit": "https://github.com/tildeio/libkit.git#workspace-support",
+    "qunit": "^2.4.1",
     "shelljs": "^0.7.8",
     "tslint": "^5.7.0",
     "typescript": "^2.4.2"
