@@ -1,6 +1,6 @@
 {
   "name": "ts-std",
-  "version": "0.6.2",
+  "version": "0.7.0-beta.1",
   "description": "A standard library for TypeScript, extracted from Glimmer and other Tilde projects",
   "main": "dist/commonjs/src/index.js",
   "module": "dist/modules/src/index.js",
@@ -33,6 +33,9 @@
     "qunit": "^2.4.1",
     "shelljs": "^0.7.8",
     "tslint": "^5.7.0",
-    "typescript": "3.0.0-insiders.20180706"
+    "typescript": "^3.0.0"
+  },
+  "resolutions": {
+    "typescript": "^3.0.0"
   }
 }
