@@ -1,6 +1,6 @@
 import { Dict } from './core';
 
-export type JSON =
+export type JSONValue =
     string
   | number
   | boolean
@@ -9,7 +9,12 @@ export type JSON =
   | JSONArray
   ;
 
+/**
+ * @deprecated
+ */
+export type JSON = JSONValue;
+
 export interface JSONObject extends Dict<JSON> {}
 export interface JSONArray extends Array<JSON> {}
 
-export default JSON;
+export default JSONValue;
