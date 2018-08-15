@@ -8,7 +8,7 @@ export function values<T extends object>(obj: T): Array<T[keyof T]> {
 
 const { hasOwnProperty } = Object.prototype;
 
-export function* entries<T extends object>(obj: T): Iterable<[keyof T, T[keyof T]]> {
+export function* entries<T extends object>(obj: T): Iterable<[keyof T & (string | number), T[keyof T]]> {
   for (let key in obj) {
     if (hasOwnProperty.call(obj, key)) {
       yield [key, obj[key]];
