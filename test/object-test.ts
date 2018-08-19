@@ -52,3 +52,39 @@ QUnit.test('hasProperty() is false on non-enumerable own properties', assert => 
 
   assert.strictEqual(std.hasProperty(obj, 'nonEnumerable'), true, 'the object hasProperty of true on non-enumerable own properties');
 });
+
+// Type tests -- if these compile, tests pass!
+interface Foo {
+  a: string;
+  b?: boolean;
+  c: number[];
+  d?: [string, number];
+}
+
+// tslint:disable-next-line:no-unused-expression
+[
+  {
+    a: 'hello world', // still required
+    b: true,          // still optional
+    c: [1, 2, 3],     // -NOW- optional
+    d: ['apples', 4] // still optional
+  } as std.OptionalProps<Foo, 'c'>,
+  {
+    a: 'hello world' // still required
+    // b: true,          // still optional
+    // c: [1, 2, 3],     // -NOW- optional
+    // d: ['apples', 4] // still optional
+  } as std.OptionalProps<Foo, 'c'>,
+  {
+    a: 'hello world', // STILL required
+    b: true,          // -NOW- required
+    c: [1, 2, 3],     // still required
+    d: ['apples', 4] // still optional
+  } as std.RequiredProps<Foo, 'a' | 'b'>,
+  {
+    a: 'hello world', // STILL required
+    b: true,          // -NOW- required
+    c: [1, 2, 3]     // still required
+    // d: ['apples', 4] // still optional
+  } as std.RequiredProps<Foo, 'a' | 'b'>
+];
