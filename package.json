@@ -15,6 +15,10 @@
   "keywords": [
     "ember-addon"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tildeio/ts-std.git"
+  },
   "scripts": {
     "problems": "node ./scripts/problems.js",
     "preversion": "npm run test",
