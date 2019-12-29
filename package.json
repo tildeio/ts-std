@@ -16,6 +16,7 @@
     "ember-addon"
   ],
   "scripts": {
+    "start": "ember s -p 0",
     "problems": "node ./scripts/problems.js",
     "preversion": "npm run test",
     "prepare": "ember build -prod",
@@ -27,13 +28,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/qunit": "^2.0.31",
-    "ember-cli": "^3.1.4",
+    "@types/qunit": "^2.5.4",
+    "ember-cli": "^3.8.2",
     "libkit": "https://github.com/tildeio/libkit.git#workspace-support",
-    "qunit": "^2.4.1",
-    "shelljs": "^0.7.8",
-    "tslint": "^5.7.0",
-    "typescript": "^3.0.0"
+    "qunit": "^2.9.2",
+    "shelljs": "^0.8.3",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.2"
   },
   "resolutions": {
     "typescript": "^3.0.0"
