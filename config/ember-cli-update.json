@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 0,
+  "packages": [
+    {
+      "name": "libkit",
+      "version": "0.7.0",
+      "blueprints": [
+        {
+          "name": "libkit",
+          "isBaseBlueprint": true
+        }
+      ]
+    }
+  ]
+}
