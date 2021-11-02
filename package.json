@@ -12,6 +12,10 @@
   "ember-addon": {
     "main": "ember-addon.js"
   },
+  "repository": {	
+    "type": "git",
+    "url": "https://github.com/tildeio/ts-std.git"
+  },
   "keywords": [
     "ember-addon"
   ],
